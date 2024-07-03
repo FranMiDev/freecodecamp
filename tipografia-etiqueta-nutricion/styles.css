@@ -74,12 +74,24 @@ p {
   font-weight: 700;
 }
 
-.medium{
+.medium {
   height: 5px;
 }
 
-.right{
+.right {
   justify-content: flex-end;
 }
 
-paso 43
+.indent {
+  margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+.double-indent {
+  margin-left: 2em;
+}
+
+61
