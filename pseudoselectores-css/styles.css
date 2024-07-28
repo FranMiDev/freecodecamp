@@ -96,4 +96,12 @@ tbody th {
   width: calc(100% - 12rem);
 }
 
-paso 55
+tr[class="total"] {
+  border: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
