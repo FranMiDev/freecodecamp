@@ -19,3 +19,4 @@ checkMessageButton.addEventListener("click", () => {
     : "This message does not seem to contain any spam.";
   messageInput.value = "";
 });
+                                                                                                                                                                                                              
