@@ -1,5 +1,5 @@
 const getMean = (array) => {
-  const sum = array.reduce();
+  const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 };
 
 const calculate = () => {
@@ -7,4 +7,3 @@ const calculate = () => {
   const array = value.split(/,\s*/g);
   const numbers = array.map((el) => Number(el)).filter((el) => !isNaN(el));
 };
-sssssssssssssssssss
