@@ -11,6 +11,7 @@ const infixEval = (str, regex) =>
   );
 const highPrecedence = (str) => {
   const regex = /([\d.]+)([*\/])([\d.]+)/;
+  const str2 = infixEval(str, regex);
 };
 
 const isEven = (num) => num % 2 === 0;
