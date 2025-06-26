@@ -116,6 +116,23 @@ class ShoppingCart {
     });
     const currentProductCountSpan = document.getElementById(`product-count-for-id${product.id}`);
     const currentProductCount = totalCountPerProduct[product.id];
-    currentProductCount > 1 ? currentProductCountSpan.textContent = `${currentProductCount}x` : undefined;
+    currentProductCount > 1 
+      ? currentProductCountSpan.textContent = `${currentProductCount}x` 
+      : productsContainer.innerHTML += `<div class="product" id="dessert${id}">
+          <p>
+            <span class="product-count" id="product-count-for-id${id}">${name}</span>
+          </p>
+          <p>${price}</p>
+        </div>`;
   }
 };
+
+const cart = new ShoppingCart();
+const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
+[...addToCartBtns].forEach(
+  btn => {
+    btn.addEventListener("click", event => {
+      cart.addItem(Number(event.target.id), products);
+    })
+  }
+);
